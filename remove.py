@@ -1,12 +1,7 @@
 #!/usr/bin/env python
 
 """
-When  : 18/11/2015
-Where : Home
-What  : A program to remove duplicate words inside a wordlist
-Why   : Because it seems like a good idea at that time,
-        to know, understand or even create a better algorithm for it.
-How   : With Sublime Text Editor and linux
+Hello There!
 """
 
 import timeit
@@ -69,12 +64,12 @@ def main(filename):
         for i in result:
             newfile.write(i + '\n')
         newfile.close()
-        print("[+] Saved as %s" % newfilename)
-        print("[+] New File Size : %s" % (Convsize(newfilename)))
+        print("[+] Simpan %s" % newfilename)
+        print("[+] Ukuran File : %s" % (Convsize(newfilename)))
 
     else:
-        print("[+] Processed : [%s] Lines in %s seconds" % (org_len, duration))
-        print("[+] No Duplicates found")
+        print("[+] Proses : [%s] Lines in %s seconds" % (org_len, duration))
+        print("[+] Tidak Ada Duplicate")
 
 
 if __name__ == "__main__":
