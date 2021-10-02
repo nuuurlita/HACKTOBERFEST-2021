@@ -1,9 +1,4 @@
 #!/usr/bin/env python
-
-"""
-Hello There!
-"""
-
 import timeit
 import os
 
@@ -75,6 +70,6 @@ def main(filename):
 if __name__ == "__main__":
     import sys
     if len(sys.argv) < 2:
-        print("removeduplicate.py wordlist.txt")
+        print("python3 removeduplicate.py wordlist.txt")
     else:
         main(sys.argv[1])
