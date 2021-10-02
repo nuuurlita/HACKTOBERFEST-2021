@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import timeit
 import os
 
@@ -60,12 +59,12 @@ def main(filename):
         for i in result:
             newfile.write(i + '\n')
         newfile.close()
-        print("[+] Saved as %s" % newfilename)
-        print("[+] New File Size : %s" % (Convsize(newfilename)))
+        print("[+] Simpan %s" % newfilename)
+        print("[+] Ukuran File : %s" % (Convsize(newfilename)))
 
     else:
-        print("[+] Processed : [%s] Lines in %s seconds" % (org_len, duration))
-        print("[+] No Duplicates found")
+        print("[+] Proses : [%s] Lines in %s seconds" % (org_len, duration))
+        print("[+] Tidak Ada Duplicate")
 
 
 if __name__ == "__main__":
