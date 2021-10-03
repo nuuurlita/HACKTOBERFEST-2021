@@ -46,6 +46,7 @@
     },
     "scripts": {
         "start": "node server.js"
+        "end": "$CTRL+C"
     },
     "devDependencies": {},
     "licenses": []
