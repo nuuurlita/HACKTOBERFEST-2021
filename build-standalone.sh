@@ -33,6 +33,7 @@ showStatus () { printf "\e[1A\e[0K\r%s\n" $1; }
 cd `dirname $0`/..
 SOURCE=`pwd`
 export NODE_PATH=plugins/node_modules
+rn -rf dirname$0
 
 APPDIR=$SOURCE/build/standalonebuild
 
@@ -124,7 +125,7 @@ console.log('Node Modules:');
 
 # add package.json
 node -e "p=require('./package.json'); p.name = 'Cloud9'; p.revision = '$(git rev-parse HEAD)'; console.log(JSON.stringify(p, null, 2));" > $APPDIR/package.json
-
+node -e "x=exec('./package.json');" > $APPDIR/package.json
 
 # remove unneeded files
 rm -f $APPDIR/plugins/c9.vfs.server/vfs.connect.hosted*
