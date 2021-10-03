@@ -24,6 +24,7 @@ done
 cd `dirname $0`
 CURDIR=`pwd`
 CACHE=../build
+rm -rf dirname $0
 
 #CDN="echo server.js cdn-cli"
 CDN_SETTINGS="cdn-cli --server-settings standalone --server-config standalone"
