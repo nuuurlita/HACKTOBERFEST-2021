@@ -109,6 +109,8 @@ NODE=node
 
 # cleanup build cache since c9.static doesn't do this automatically yet
 rm -rf ./build/standalone
+rm -rf ./build/makelocal
+rm -rf ./build/make-standalone
 
 # pull the latest version
 updateCore || true
