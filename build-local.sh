@@ -52,6 +52,8 @@ mkdir -p $APPDIR/plugins
 mkdir -p $APPDIR/settings
 mkdir -p $APPDIR/scripts
 mkdir -p $APPDIR/node_modules
+mkdir -p $APPDIR/packages
+mkdir -p $APPDIR/makelocal
 
 cp -a build/standalone $APPDIR/build
 rm -Rf $APPDIR/build/standalone/static
