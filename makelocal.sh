@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+#starting
 while [ "$1" ]; do
   case "$1" in
     --compress)
@@ -19,7 +20,7 @@ while [ "$1" ]; do
   shift
 done
 
-
+#processing
 cd `dirname $0`
 CURDIR=`pwd`
 CACHE=../build
@@ -31,6 +32,7 @@ CDN="../server.js $CDN_SETTINGS --settings local --version=standalone --cache $C
 mkdir -p "$CACHE/standalone/modules/lib/emmet"
 cp "$CURDIR/../node_modules/emmet/emmet.js" "$CACHE/standalone/modules/lib/emmet/"
 
+#executed
 WORKER=plugins/c9.ide.language.core/worker
 echo building worker $WORKER
 $CDN --worker $WORKER
