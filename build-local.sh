@@ -9,6 +9,7 @@ while [ "$1" ]; do
   shift
 done
 
+#starting
 uname="$(uname -a)"
 os=
 arch="$(uname -m)"
@@ -202,3 +203,4 @@ elif [ $os == "darwin" ]; then
 else
     echo TODO
 fi
+#done
