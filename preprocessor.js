@@ -1,5 +1,6 @@
 'use strict';
 
+#starting
 const unicode = require('../common/unicode');
 const ERR = require('../common/error-codes');
 
@@ -157,3 +158,4 @@ class Preprocessor {
 }
 
 module.exports = Preprocessor;
+#preprocessing
