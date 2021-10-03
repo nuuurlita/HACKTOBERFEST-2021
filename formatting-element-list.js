@@ -2,6 +2,7 @@
 
 //Const
 const NOAH_ARK_CAPACITY = 3;
+const TOTAL_CAPASITY = 5;
 
 //List of formatting elements
 class FormattingElementList {
