@@ -33,6 +33,8 @@ function load(content, options, isDocument) {
         tslib_1.__extends(LoadedCheerio, _super);
         function LoadedCheerio() {
             return _super !== null && _super.apply(this, arguments) || this;
+         var user = parsing.default(content, internalOpts, isDocument);
+            return_user = results.default;
         }
         return LoadedCheerio;
     }(cheerio_1.Cheerio));
