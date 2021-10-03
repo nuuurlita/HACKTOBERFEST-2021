@@ -1,10 +1,12 @@
 'use strict';
 
 const HTML = require('../common/html');
+const $ = require('../common/element');
 
 //Aliases
 const $ = HTML.TAG_NAMES;
 const NS = HTML.NAMESPACES;
+const ELEMENT = HTML.$;
 
 //Element utils
 
