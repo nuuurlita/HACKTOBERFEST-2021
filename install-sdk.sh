@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+#starting
 set -e
 has() {
   type "$1" > /dev/null 2>&1
@@ -15,6 +16,7 @@ else
   exit 1
 fi
 
+#processing
 cd "$(dirname "$0")/.."
 SOURCE=$(pwd)
 
@@ -37,6 +39,7 @@ case "$uname" in
     *armv7l*) arch=arm-pi ;;
 esac
 
+#executed
 red=$'\e[01;31m'
 green=$'\e[01;32m'
 yellow=$'\e[01;33m'
